@@ -1,0 +1,28 @@
+﻿<Window x:Class="DZ6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DZ6"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Первая Сторона" HorizontalAlignment="Left" Margin="90,143,0,0" VerticalAlignment="Top" Width="100"/>
+        <Label Content="Вторая Сторона" HorizontalAlignment="Left" Margin="90,192,0,0" VerticalAlignment="Top" Width="100"/>
+        <Label Content="Угол" HorizontalAlignment="Left" Margin="90,242,0,0" VerticalAlignment="Top" Width="100"/>
+        <TextBox x:Name="tb_Side1" HorizontalAlignment="Left" Height="26" Margin="238,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="tb_Side1_TextChanged"/>
+        <TextBox x:Name="tb_Angel" HorizontalAlignment="Left" Height="26" Margin="238,242,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="tb_Angel_TextChanged"/>
+        <Label x:Name="lbl_Perimeter" Content="Периметр:" HorizontalAlignment="Left" Margin="513,143,0,0" VerticalAlignment="Top" Width="69"/>
+        <Label x:Name="lbl_Square" Content="Площадь:" HorizontalAlignment="Left" Margin="513,242,0,0" VerticalAlignment="Top" Width="69"/>
+        <Button x:Name="___Button" Content="Расчитать" HorizontalAlignment="Left" Height="40" Margin="322,315,0,0" VerticalAlignment="Top" Width="140" Click="___Button_Click"/>
+        <ComboBox x:Name="CmB" HorizontalAlignment="Left" Margin="322,66,0,0" VerticalAlignment="Top" Width="140" Height="30" SelectionChanged="CmB_SelectionChanged">
+            <ComboBoxItem Content="Равнобедренный" IsSelected="True"/>
+            <ComboBoxItem Content="Равносторонний"/>
+            <ComboBoxItem Content="Прямоугольный"/>
+        </ComboBox>
+        <TextBox x:Name="tb_Side2" HorizontalAlignment="Left" Height="26" Margin="238,192,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="tb_Side2_TextChanged"/>
+        <TextBox x:Name="tb_Perimeter" HorizontalAlignment="Left" Height="26" Margin="587,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsReadOnly="True"/>
+        <TextBox x:Name="tb_Square" HorizontalAlignment="Left" Height="26" Margin="587,242,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="tb_Square_TextChanged" IsReadOnly="True"/>
+
+    </Grid>
+</Window>
